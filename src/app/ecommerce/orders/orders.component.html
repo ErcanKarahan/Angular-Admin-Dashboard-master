@@ -32,7 +32,7 @@
             <div class="position-relative">
                 <input type="text" class="form-control ps-5 radius-30" placeholder="Search Order"> <span class="position-absolute top-50 product-show translate-middle-y"><i class="bx bx-search"></i></span>
             </div>
-          <div class="ms-auto"><a href="#" (click)="$event.preventDefault()" class="btn btn-primary radius-30 mt-2 mt-lg-0"><i class="bx bxs-plus-square"></i>Neukunde Anlegen</a></div>
+          <div class="ms-auto"><a href="#" (click)="$event.preventDefault()" class="btn btn-primary radius-30 mt-2 mt-lg-0" (click)="buttonclick()"><i class="bx bxs-plus-square"></i>Neukunde Anlegen</a></div>
         </div>
         <div class="table-responsive">
             <table class="table mb-0">
@@ -66,8 +66,8 @@
                         <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4">View Details</button></td>
                         <td>
                             <div class="d-flex order-actions">
-                                <a href="#" (click)="$event.preventDefault()" class=""><i class='bx bxs-edit'></i></a>
-                                <a href="#" (click)="$event.preventDefault()" class="ms-3"><i class='bx bxs-trash'></i></a>
+                                <a href="#" (click)="$event.preventDefault()" class=""><i class='bx bxs-edit' (click)="editclick()"></i></a>
+                                <a href="#" (click)="$event.preventDefault()" class="ms-3"><i class='bx bxs-trash' (click)="trashclick()"></i></a>
                             </div>
                         </td>
                     </tr>
